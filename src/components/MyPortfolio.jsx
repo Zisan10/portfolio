@@ -341,7 +341,7 @@ const MyPortfolio = () => {
               </div>
             </div>
             {/* second div  */}
-            <div className="lg:flex lg:justify-between lg:items-center lg:gap-10 hidden lg:block pt-10">
+            <div className="hidden lg:justify-between lg:items-center lg:gap-10  lg:flex pt-10">
               <div className="w-87.5 h-50 rounded-xl group cursor-pointer overflow-hidden border border-amber-300">
                 <div className="relative">
                   <img
