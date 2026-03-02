@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaCode,
   FaFacebookF,
@@ -10,8 +10,11 @@ import {
 import { SiCssdesignawards, SiSocialblade } from "react-icons/si";
 import { TiLocationArrowOutline } from "react-icons/ti";
 import { HiOutlineBars3 } from "react-icons/hi2";
+import { HiMenu, HiX } from "react-icons/hi";
 
 const MyPortfolio = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div>
       {/* header section */}
@@ -72,9 +75,52 @@ const MyPortfolio = () => {
           <button className="bg-amber-400 hidden lg:block py-1 px-8 rounded-full text-white font-semibold cursor-pointer hover:bg-amber-500 active:bg-amber-800 hover:transition-all duration-300">
             Register
           </button>
-          <button className="text-3xl text-white font-bold lg:hidden">
-            <HiOutlineBars3 />
+          <button
+            className="text-3xl text-white font-bold lg:hidden cursor-pointer"
+            onClick={() => setOpen(!open)}>
+            {open ? <HiX /> : <HiMenu />}
           </button>
+          {open && (
+            <nav className="lg:hidden relative flex justify-center items-center">
+              <ul className="absolute top-10 right-15 bg-amber-400 p-5 rounded-lg">
+                <li className="py-2 px-2">
+                  <a
+                    href="#"
+                    className="text-sm font-semibold hover:text-zinc-900 lg:hover:text-amber-400 hover:transition-all duration-300 ">
+                    Home
+                  </a>
+                </li>
+                <li className="py-2 px-2">
+                  <a
+                    href="#"
+                    className="text-sm font-semibold hover:text-zinc-900 lg:hover:text-amber-400 hover:transition-all duration-300 ">
+                    About
+                  </a>
+                </li>
+                <li className="py-2 px-2">
+                  <a
+                    href="#"
+                    className="text-sm font-semibold hover:text-zinc-900 lg:hover:text-amber-400 hover:transition-all duration-300 ">
+                    Service
+                  </a>
+                </li>
+                <li className="py-2 px-2">
+                  <a
+                    href="#"
+                    className="text-sm font-semibold hover:text-zinc-900 lg:hover:text-amber-400 hover:transition-all duration-300 ">
+                    Portfolio
+                  </a>
+                </li>
+                <li className="py-2 px-2">
+                  <a
+                    href="#"
+                    className="text-sm font-semibold hover:text-zinc-900 lg:hover:text-amber-400 hover:transition-all duration-300 ">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          )}
         </div>
       </header>
 
