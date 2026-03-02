@@ -15,8 +15,8 @@ const MyPortfolio = () => {
   return (
     <div>
       {/* header section */}
-      <header className="lg:w-7xl mx-auto px-20 py-4 sticky top-0 z-50 flex justify-between items-center bg-zinc-900">
-        <div className="flex justify-start items-center gap-3">
+      <header className="lg:w-7xl w-90 mx-auto px-20 py-4 sticky top-0 z-50 flex justify-between items-center bg-zinc-900">
+        <div className="w-full flex justify-start items-center gap-3">
           <a href="/">
             <img
               src="./zisan.jpg"
@@ -81,7 +81,7 @@ const MyPortfolio = () => {
       <main>
         {/* hero section */}
         <section>
-          <div className="lg:min-h-screen lg:w-7xl mx-auto px-20 bg-zinc-900 flex justify-between items-center gap-10">
+          <div className="lg:min-h-screen lg:w-7xl w-90 mx-auto px-20 bg-zinc-900 flex justify-between items-center gap-10">
             <div className="text-white py-20">
               <p className="font-bold lg:text-2xl">Hello, It's Me</p>
               <h2 className="font-bold lg:text-5xl py-1 text-2xl">
@@ -430,7 +430,7 @@ const MyPortfolio = () => {
         </section>
         {/* Skill section  */}
         <section>
-          <div className="lg:w-7xl mx-auto px-20 bg-zinc-800 pb-20">
+          <div className="lg:w-7xl w-90 mx-auto px-20 bg-zinc-800 pb-20">
             <div className="text-center">
               <h3 className="text-white text-3xl font-bold pb-4 inline relative after:content-[''] after:absolute after:w-20 after:h-0.5 after:bg-amber-400 after:bottom-0 after:right-0">
                 My <span className="text-amber-400">Skills</span>
@@ -520,7 +520,7 @@ const MyPortfolio = () => {
         </section>
         {/* contact section  */}
         <section>
-          <div className="lg:w-7xl mx-auto px-20 bg-zinc-800 pb-20">
+          <div className="lg:w-7xl w-90 mx-auto px-20 bg-zinc-800 pb-20">
             <div className="text-center">
               <h3 className="text-white text-3xl font-bold pb-4 inline relative after:content-[''] after:absolute after:w-13 after:h-0.5 after:bg-amber-400 after:bottom-0 after:right-0">
                 Contact <span className="text-amber-400">Me!</span>
@@ -578,7 +578,7 @@ const MyPortfolio = () => {
         {/* footer section  */}
         <section>
           <footer>
-            <div className="lg:w-7xl mx-auto px-20 bg-zinc-900 text-white py-5 flex gap-x-5 justify-between items-center">
+            <div className="lg:w-7xl w-90 mx-auto px-20 bg-zinc-900 text-white py-5 flex gap-x-5 justify-between items-center">
               <p className="text-zinc-100 text-sm">
                 Copyright © 2024 by Zisan | All Rights Reserved.
               </p>
